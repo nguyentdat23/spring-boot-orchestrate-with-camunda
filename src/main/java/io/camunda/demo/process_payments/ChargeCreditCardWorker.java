@@ -17,6 +17,7 @@ public class ChargeCreditCardWorker {
   @JobWorker(type = "charge-credit-card")
   public Map<String, Object> chargeCreditCard(@Variable(name = "totalWithTax") Double totalWithTax) {
     LOG.info("charging credit card: {}", totalWithTax);
+
     Map<String, Object> result = new HashMap<>();
     result.put("amountCharged", totalWithTax);
     result.put("currentBalance", totalWithTax - 10000);
