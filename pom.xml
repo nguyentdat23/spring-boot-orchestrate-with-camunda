@@ -18,6 +18,7 @@
   <licenses>
     <license />
   </licenses>
+
   <developers>
     <developer />
   </developers>
@@ -42,16 +43,16 @@
       <scope>test</scope>
     </dependency>
 
-    <dependency>
-      <groupId>org.camunda.bpm.dmn</groupId>
-      <artifactId>camunda-engine-dmn</artifactId>
-      <version>7.22.0</version>
-    </dependency>
+    <!-- <dependency> -->
+    <!--   <groupId>io.camunda</groupId> -->
+    <!--   <artifactId>spring-boot-starter-camunda-sdk</artifactId> -->
+    <!--   <version>8.6.7</version> -->
+    <!-- </dependency> -->
 
     <dependency>
       <groupId>io.camunda</groupId>
-      <artifactId>spring-boot-starter-camunda-sdk</artifactId>
-      <version>8.6.7</version>
+      <artifactId>zeebe-client-java</artifactId>
+      <version>8.8.0-alpha1</version>
     </dependency>
   </dependencies>
 
